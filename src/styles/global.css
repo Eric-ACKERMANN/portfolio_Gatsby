@@ -1,0 +1,301 @@
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* VERT EVERNOTE */
+  /* --bgc-main: #00a82d; 
+  --bgc-second: #ffffff;
+  --bgc-third: #8b4367; */
+  /* --bgc-main: #042f4b; */
+  /* --bgc-main: #2962ff; */
+  /* --bgc-main: #263238; */
+  /* --bgc-main-shadyBlue : #253C5C;
+  --bgc-second: #ffffff;
+
+  /* STYLE BLUE ORANGE SHADY*/
+  /* --bgc-main: #253c5c;
+  --bgc-second: #fea60c; */
+
+  /* STYLE BLUE ORANGE*/
+  /* --bgc-main: #0064ff;
+  --bgc-second: #ff9b00; */
+
+  /* STYLE BLUE ORANGE SHADY*/
+  --color-main: #1a1a1d;
+  --color-second: #c3073f;
+  --color-third: #950740;
+  --color-fourth: #6f2232;
+  --color-fifth: #4e4e50;
+  --color-sixth: #646468;
+  --color-white: #fefefe;
+
+  background-color: var(--color-main);
+  color: var(--color-white);
+
+  /* LAYOUT */
+  --layout-max-width: 1120px;
+  /* CONTAINER */
+  --container-padding: 3rem 1rem;
+
+  /* BORDER */
+  --border-projects: #cccccc;
+  /* FONT SIZE */
+  --fs-nav-desk: 1rem;
+  /* BUTTON */
+  --button-main-color: #1565c0;
+  --button-second-color: #3292ff;
+  /* FONT WEIGHT */
+  --fw-nav-desk: 600;
+  /* FONT FAMILY */
+  font-family: "Open Sans", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/***** BUTTON STYLE *****/
+
+.btn {
+  border: none;
+  font-weight: bold;
+  transition: box-shadow 0.3s;
+  font-size: 1.4rem;
+  padding: 15px 30px;
+  border-radius: 30px;
+  transition: box-shadow color 0.3s;
+}
+.btn-primary {
+  background-color: var(--button-main-color);
+  color: var(--color-second);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--button-main-color);
+  border: var(--button-main-color) solid 1px;
+}
+
+.btn-secondary:hover {
+  background-color: var(--button-main-color);
+  color: var(--color-second);
+}
+
+.btn-secondary:active,
+.btn-primary:active {
+  box-shadow: 0 0 0 3px var(--button-second-color);
+  transition: box-shadow 0.3s;
+}
+
+/****** CONTACT ******/
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.contact .form > div:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact .form > div:nth-child(1) div {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 48%;
+}
+
+.contact .form > div:nth-child(2) {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.contact label {
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.contact textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact .form input,
+textarea {
+  margin-bottom: 25px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--projects-border);
+  padding: 10px;
+  outline: none;
+  font-size: 1.6rem;
+}
+
+.contact .form input:focus,
+textarea:focus {
+  border: 1px solid var(--button-main-color);
+  box-shadow: 0 0 0 3px var(--button-main-color);
+  transition: all 0.3s;
+}
+
+textarea:focus + label,
+input:focus + label {
+  color: var(--button-main-color);
+  transition: all 0.3s;
+}
+
+textarea::selection,
+input::selection,
+label::selection {
+  color: white;
+  background-color: var(--button-main-color);
+}
+
+.form > button {
+  font-size: 1.6rem;
+  align-self: center;
+  padding: 15px 30px;
+  border-radius: 30px;
+}
+
+.contact ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.contact ul li {
+  font-size: 1.6rem;
+}
+
+.contact a {
+  color: grey;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: var(--button-main-color);
+}
+
+/**** FOOTER ****/
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--second-color);
+}
+
+footer ul li {
+  font-size: 1.6rem;
+  color: var(--second-color);
+}
+
+footer a,
+span {
+  color: var(--second-color);
+  text-decoration: none;
+}
+
+/***** PROJECT ******/
+
+.badge {
+  background-color: var(--button-main-color);
+  color: var(--second-color);
+  border-radius: 15px;
+  font-size: 0.5rem;
+  font-weight: 700;
+  vertical-align: middle;
+  padding: 3px 7px;
+  margin-left: 1rem;
+}
+
+/***** MEDIA QUERY ****/
+@media (min-width: 540px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 980px and up) */
+@media (min-width: 980px) {
+}
+
+/* Extra large devices (large desktops, 1120px and up) */
+@media (min-width: 1120px) {
+}
+
+/**** ABOUT ME ******/
+.aboutme-section {
+  background-color: var(--second-bg-color);
+}
+
+.aboutme > section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.aboutme article:nth-child(1) {
+  flex: 2;
+}
+
+.aboutme article:nth-child(2) {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.aboutme article span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+article p {
+  text-align: justify;
+  font-size: 1.3rem;
+}
+
+.aboutme article:nth-child(2) div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutme article:nth-child(2) div i {
+  font-size: 2.9rem;
+  padding: 20px 20px;
+}
+
+.aboutme img {
+  padding: 21px;
+}
