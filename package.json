@@ -16,7 +16,6 @@
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.17.11",
     "gatsby-plugin-styled-components": "^3.1.12",
-    "infinite-react-carousel": "^1.1.7",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-icons": "^3.8.0",

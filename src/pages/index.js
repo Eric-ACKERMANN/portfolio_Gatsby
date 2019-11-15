@@ -2,7 +2,6 @@ import React from "react"
 
 import Introduction from "../components/Introduction"
 import Portfolio from "../components/Portfolio"
-import Skills from "../components/Skills"
 import Contact from "../components/Contact"
 import Layout from "../components/Layout"
 
